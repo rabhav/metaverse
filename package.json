@@ -10,7 +10,7 @@
     "three": "^0.140.2"
   },
   "scripts": {
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages1 -d dist"
   },
   "type": "module",
   "engines": {
