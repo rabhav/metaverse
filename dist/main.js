@@ -107,7 +107,7 @@ const sound = new THREE.Audio(listener);
 
 // load a sound and set it as the Audio object's buffer
 const audioLoader = new THREE.AudioLoader();
-audioLoader.load('./models/mixkit-human-single-heart-beat-490.wav', function (buffer) {
+audioLoader.load('./mixkit-human-single-heart-beat-490.wav', function (buffer) {
     sound.setBuffer(buffer);
    // sound.setLoop(true);
     sound.setVolume(0.5);
@@ -127,7 +127,7 @@ var modelReady = false
 var animationAction = [];
 var clock = new THREE.Clock();
 const gltfLoader = new GLTFLoader()
-gltfLoader.load('./models/3D Research Human Heart Model File_1.glb', (gltf) => {
+gltfLoader.load('./3D Research Human Heart Model File_1.glb', (gltf) => {
 
     const model = gltf.scene;
     heartmodel = model;
@@ -141,12 +141,12 @@ gltfLoader.load('./models/3D Research Human Heart Model File_1.glb', (gltf) => {
     var action = mixer.clipAction(gltf.animations[0]);
     animationAction.push(action);
 
-    gltfLoader.load('./models/3D Research Model File_superfastanimation.glb', (gltf) => {
+    gltfLoader.load('./3D Research Model File_superfastanimation.glb', (gltf) => {
         var action = mixer.clipAction(gltf.animations[0]);
         animationAction.push(action);
     });
 
-    gltfLoader.load('./models/3D Research Model File_Slow.glb', (gltf) => {
+    gltfLoader.load('./3D Research Model File_Slow.glb', (gltf) => {
         var action = mixer.clipAction(gltf.animations[0]);
         animationAction.push(action);
     });
