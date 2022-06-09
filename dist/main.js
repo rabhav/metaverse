@@ -6,7 +6,7 @@ import {OrbitControls} from 'https://cdn.jsdelivr.net/npm/three@0.118/examples/j
 var value;
 // SCENE
 const scene = new THREE.Scene();
-scene.background = new THREE.Color( 0xFFFFFF );
+scene.background = new THREE.Color( 0x000000 );
 
 
 // Lights
