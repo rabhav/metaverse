@@ -10,7 +10,7 @@
     "three": "^0.140.2"
   },
   "scripts": {
-    "start": "node index.html"
+    "deploy": "gh-pages -d dist"
   },
   "type": "module",
   "engines": {
